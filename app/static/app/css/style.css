@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(75,74,74);
+    color:white;
+}
+.jumbo-class{
+    background-color: rgb(83,81,81);
+
+}
+.font{
+    font-weight:bold;
+}
+
+.form-control,
+.form-control:focus{
+    background-color: rgb(177,168,168);
+}
+.shape{
+    box-shadow: 4px 4px 8px rgba(250,200,11,0.5);
+}
+.form-control:focus {
+    border-color: #5cb85c;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.075) inset, 0px 1px 8px rgba(92, 184, 92, 0.5);
+}

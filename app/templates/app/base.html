@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'app/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+    
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(75,74,74);
+            color:white;
+        }
+        .jumbo-class{
+            background-color: rgb(83,81,81);
+
+        }
+        .font{
+            font-weight:bold;
+        }
+
+        .form-control,
+        .form-control:focus{
+            background-color: rgb(177,168,168);
+        }
+        .shape{
+            box-shadow: 4px 4px 8px rgba(250,200,11,0.5);
+        }
+        .form-control:focus {
+            border-color: #5cb85c;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.075) inset, 0px 1px 8px rgba(92, 184, 92, 0.5);
+        }
+
+        
+       
+       
+       
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+        {% include 'app/navbar.html' %}
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 mt-2">
+                {% block msg %}
+                {% endblock msg %}
+            </div>
+    </div>
+           <div class='col-sm-12 text-white my-5 text-center'>
+            {% block side %}
+            {% endblock side %}
+            </div>
+            
+            <div class="col-sm-12">
+            {% block content %}
+            {% endblock content %}
+            </div>
+        
+  
+    
+
+
+
+
+
+   <script src="{% static 'app/js/jquery.js'%}"></script>
+   <script src="{% static 'app/js/popper.js'%}"></script>
+   <script src="{% static 'app/js/bootstrap.js'%}"></script>
+</body>
+</html>
